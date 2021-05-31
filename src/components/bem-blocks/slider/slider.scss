@@ -1,0 +1,161 @@
+.slider {
+  background-color: $white-blue;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 12.7%;
+    padding-right: 12.7%;
+    padding-top: 100px;
+    padding-bottom: 60px;
+
+    @media screen and (max-width: 1400px) {
+      padding-top: 94px;
+      padding-bottom: 62px;
+      padding-left: 15.25vw;
+      padding-right: 15.25vw;
+    }
+
+    @media screen and (max-width: 991px) {
+      flex-direction: column;
+      padding-top: 48px;
+      padding-left: 3.125vw;
+      padding-right: 3.125vw;
+      padding-bottom: 50px;
+    }
+
+    @media screen and (max-width: 580px) {
+      padding-top: 45px;
+      padding-left: 10px;
+      padding-right: 10px;
+      padding-bottom: 41px;
+    }
+  }
+
+  &__control {
+    margin-right: 1.8%;
+    padding-top: 217px;
+    width: 45%;
+
+    @media screen and (max-width: 1800px) {
+      width: 45%;
+    }
+
+    @media screen and (max-width: 1400px) {
+      width: 30%;
+      padding-top: 123px;
+    }
+
+    @media screen and (max-width: 991px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      padding-top: 10px;
+      margin-bottom: 65px;
+    }
+
+    @media screen and (max-width: 580px) {
+      margin-bottom: 44px;
+    }
+  }
+
+  &__name {
+    display: inline-block;
+    margin-bottom: 50px;
+
+    @media screen and (max-width: 991px) {
+      width: 100%;
+      margin-bottom: 33px;
+    }
+
+    @media screen and (max-width: 580px) {
+      margin-bottom: 26px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 55px;
+
+    @media screen and (max-width: 1400px) {
+      margin-bottom: 32px;
+    }
+
+    @media screen and (max-width: 991px) {
+      width: 210px;
+    }
+
+    @media screen and (max-width: 580px) {
+      width: 58%;
+    }
+  }
+
+  &__wrapper {
+    width: 72.5%;
+    // justify-content: space-between;
+    // flex-wrap: wrap;
+
+    @media screen and (max-width: 1400px) {
+      width: 65.5%;
+    }
+
+    @media screen and (max-width: 991px) {
+      width: 100%;
+    }
+  }
+
+  &__button {
+    margin-right: 15px;
+    transition: .3s;
+
+    width: 65px;
+    height: 65px;
+
+    @media screen and (max-width: 1400px) {
+      width: 56px;
+      height: 56px;
+    }
+
+    &:nth-last-child(1) {
+      margin-right: 0;
+    }
+
+    svg {
+      
+      circle {
+        transition:fill .3s;
+        fill: $dark;
+
+        @media screen and (max-width: 1400px) {
+          fill: $blue;
+        }
+      }
+      path {
+        transition:fill .3s;
+        fill: $white;
+      }
+    }
+
+    &:hover {
+      
+      circle {
+        fill: $white;
+      }
+      path {
+        fill: $dark;
+      }
+
+    }
+
+    &:active {
+      
+      circle {
+        fill: $gray;
+      }
+      path {
+        fill: $blue;
+      }
+      
+    }
+  }
+}

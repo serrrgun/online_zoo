@@ -1,0 +1,110 @@
+.map-full {
+  
+  background-color: #AACED9;
+  margin-top: -115px;
+  height: 100vh;
+  overflow: hidden;
+
+  &__img {
+    height: 100%;
+    width: 100%;
+
+    img {
+      object-fit: cover;
+    }
+  }
+
+  &__pin {
+    cursor: pointer;
+    position: absolute;
+
+    &--gorilla {
+      top: 50%;
+      left: 47.8%;
+    }
+
+    &--alligator {
+      top: 25%;
+      left: 12%;
+    }
+
+    &--panda {
+      top: 28%;
+      left: 73%;
+    }
+
+    &--eagle {
+      top: 22%;
+      left: 8.7%;
+    }
+
+    &--active {
+      svg {
+        width: 140px !important;
+
+        @media screen and (max-width: 1400px) {
+          width: 80px !important;
+        }
+
+        .inner {
+          stroke: #609FFF !important;
+          stroke-width: 2px !important;
+        }
+      }
+    }
+
+    svg {
+      transition: .4s;
+      width: 113px;
+
+      @media screen and (max-width: 1400px) {
+        width: 65px;
+      }
+
+      .inner {
+        transition: .4s;
+        stroke: transparent;
+        stroke-width: 2px;
+      }
+    }
+
+    &:hover {
+
+      svg {
+        transition: .4s;
+        width: 148px;
+
+        @media screen and (max-width: 1400px) {
+          width: 80px;
+        }
+
+        .inner {
+          transition: .4s;
+          stroke: #609FFF;
+          stroke-width: 2px;
+        }
+      }
+      
+    }
+  }
+
+  &__card {
+    position: absolute;
+    left: 30%;
+    top: 28%;
+
+    @media screen and (max-width: 991px) {
+      left: 10%;
+    }
+
+    @media screen and (max-width: 580px) {
+      .animal-info {
+        padding-top: 20px;
+      }
+
+      .animal-info__img {
+        display: none;
+      }
+    }
+  }
+}

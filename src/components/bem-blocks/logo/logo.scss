@@ -1,0 +1,81 @@
+.logo {
+  display: none;
+  padding: 25px 17.5px;
+  transition: .3s;
+
+  @media screen and (max-width: 1400px) {
+    padding: 19px 12.5px;
+  }
+
+  svg {
+    display: block;
+    width: 53px;
+    height: 40px;
+    stroke: black;
+
+    @media screen and (max-width: 1400px) {
+      width: 42px;
+      height: 32px;
+    }
+  }
+
+  &--menu {
+    @media screen and (max-width: 991px) {
+      display: block;
+      position: absolute;
+      left: 15px;
+      top: 15px;
+      padding: 0;
+    }
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &--sidebar {
+    display: block;
+    margin-right: 0;
+    padding: 23px 17.5px;
+    border-bottom: 2px solid #F0F0F0;
+    border-top: 2px solid #F0F0F0;
+    border-right: none;
+    border-left: none;
+
+    @media screen and (max-width: 1400px) {
+      padding: 17px 12.5px;
+    }
+
+    @media screen and (max-width: 991px) {
+      border: none;
+      padding: 10px 0 0 0;
+    }
+
+    @media screen and (max-width: 580px) {
+      border: none;
+      padding: 0;
+    }
+
+    svg {
+      @media screen and (max-width: 991px) {
+        width: 50px;
+        height: 50px;
+      }
+
+      @media screen and (max-width: 580px) {
+        width: 36px;
+        height: 40px;
+      }
+    }
+    
+  }
+
+  &--noborder {
+    border: none;
+  }
+
+  &--header {
+    display: block;
+    margin-right: 7%;
+  }
+}

@@ -1,0 +1,100 @@
+body {
+  box-sizing: border-box;
+  background-color: $background-page;
+	font-size: 16px;
+	font-family: "Rubik", Arial, Helvetica, sans-serif;
+  color: $dark-blue;
+  font-weight: 400;
+  //overflow: hidden;
+
+  // &::-webkit-scrollbar {
+  //   width: 0px;
+  // }
+
+  // &::-webkit-scrollbar-track {
+  //   background-color: transparent;
+  // }
+
+  // &::-webkit-scrollbar-thumb {
+  //   width: 5px;
+  //   background-color: $blue;
+  //   border-radius: 7px;
+  // }
+
+  &.hidden {
+    overflow: hidden;
+  }
+
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+html,
+body {
+	height: 100%;
+	position: relative;
+}
+
+ul,
+ol,
+li,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+}
+
+button:focus,
+input:focus {
+	outline: transparent;
+}
+
+button {
+	@include no-btn;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+img,
+picture {
+  display: block;
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1920px;
+  width: 100%;
+  margin: 0 auto;
+}

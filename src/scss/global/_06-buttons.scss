@@ -1,0 +1,94 @@
+.button {
+  padding: 21px 81px;
+  background-color: $blue;
+  border-radius: 5px;  
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FFFFFF;
+  white-space: nowrap;
+  transition: .5s;
+
+  @media screen and (max-width: 1800px) {
+    padding: 16px 60px;
+  }
+
+  @media screen and (max-width: 580px) {
+    padding: 16px 55px;
+  }
+
+  &:hover {
+    background-color: $dark-blue;
+  }
+
+  &:active {
+    background-color: #150068;
+  }
+
+  &--light {
+    background-color: $dark-blue;
+
+    &:hover {
+      background-color: $blue;
+    }
+  
+    &:active {
+      background-color: #150068;
+    }
+  }
+
+  &--transparent {
+    padding: 19px 80px;
+    color: $blue;
+    border: 2px solid $blue;
+    box-sizing: border-box;
+    background-color: transparent;
+
+    @media screen and (max-width: 1800px) {
+      padding: 14px 58px;
+    }
+
+    @media screen and (max-width: 580px) {
+      padding: 16px 55px;
+    }
+
+    &:hover {
+      background-color: transparent;
+      border: 2px solid $dark-blue;
+    }
+  
+    &:active {
+      background-color: transparent;
+      border: 2px solid #3888FF;
+    }
+  }
+
+  &--transparent-white {
+    padding: 19px 80px;
+    color: $white;
+    border: 2px solid $white;
+    box-sizing: border-box;
+    background-color: transparent;
+
+    &:hover {
+      background-color: transparent;
+      border: 2px solid $gray;
+    }
+  
+    &:active {
+      background-color: transparent;
+      border: 2px solid #3888FF;
+    }
+
+    @media screen and (max-width: 580px) {
+      padding: 17px 73px;
+      font-size: 14px;
+    }
+  }
+
+  &--none {
+    @media screen and (max-width: 1170px) {
+      display: none;
+    }
+  }
+}

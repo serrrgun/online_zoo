@@ -1,0 +1,222 @@
+.video {
+  background-color: $white;
+
+  @media screen and (max-width: 991px) {
+    width: 65%;
+  }
+
+  @media screen and (max-width: 580px) {
+    width: 100%;
+  }
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 12.7%;
+    padding-right: 7.91%;
+    padding-top: 71px;
+    padding-bottom: 60px;
+
+    @media screen and (max-width: 1400px) {
+      padding-right: 3.33vw;
+      padding-left: 15.33vw;
+      padding-bottom: 48px;
+
+    }
+
+    @media screen and (max-width: 991px) {
+      flex-direction: column;
+      width: 100%;
+      padding-right: 0;
+      padding-left: 0;
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+  }
+
+  &__frame {
+    width: 69.8%;
+    position: relative;
+    padding-bottom: 39.25%; /* задаёт высоту контейнера для 16:9 (если 4:3 — поставьте 75%) */
+    height: 0;
+    border-radius: 5px;
+    overflow: hidden;
+
+    iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 599px;
+      border-width: 0;
+      outline-width: 0;
+
+      @media screen and (max-width: 1400px) {
+        height: 307px;
+      }
+
+      @media screen and (max-width: 991px) {
+        height: 218px;
+      }
+    }
+
+    @media screen and (max-width: 1400px) {
+      width: 55.85%;
+      padding-bottom: 31.5%;
+    }
+
+    @media screen and (max-width: 991px) {
+      order: 2;
+      width: 100%;
+      padding-bottom: 55.7%;
+    }
+  }
+
+  &__info {
+    width: 27.45%;
+
+    &-title {
+      margin-bottom: 34px;
+    }
+
+    &-ph {
+      margin-bottom: 40px;
+      padding-right: 18%;
+    }
+
+    @media screen and (max-width: 1400px) {
+      width: 41%;
+    }
+
+    @media screen and (max-width: 991px) {
+      order: 1;
+      width: 100%;
+    }
+  }
+
+  &__subscribe {
+    display: flex;
+    padding-bottom: 39px;
+    padding-right: 5px;
+    margin-bottom: 40px;
+    border-bottom: 1px solid #E3E3E3;
+    align-items: center;
+
+    @media screen and (max-width: 1400px) {
+      border: none;
+      padding-bottom: 0;
+      margin-bottom: 26px;
+    }
+
+    @media screen and (max-width: 991px) {
+      margin-bottom: 22px;
+    }
+  }
+  
+  &__subscribe-icon {
+    width: 70px;
+    margin-right: 20px;
+
+    @media screen and (max-width: 1400px) {
+      width: 54px;
+      margin-right: 28px;
+    }
+
+    @media screen and (max-width: 991px) {
+      margin-right: 15px;
+    }
+
+    @media screen and (max-width: 580px) {
+      width: 43px;
+    }
+  }
+
+  &__subscribe-inner {
+    @media screen and (max-width: 991px) {
+      padding-top: 7px;
+    }
+
+    @media screen and (max-width: 580px) {
+      padding-top: 0;
+    }
+  }
+
+  &__subscribe-name {
+    margin-bottom: 4px;
+    font-size: 24px;
+    line-height: 28px;
+    color: $black;
+
+    @media screen and (max-width: 1400px) {
+      font-size: 1.66vw;
+      line-height: 2vw;
+    }
+
+    @media screen and (max-width: 991px) {
+      margin-bottom: 3px;
+      font-size: 2.5vw;
+      line-height: 2.96vw;
+    }
+
+    @media screen and (max-width: 580px) {
+      font-size: 4.375vw;
+      line-height: 5.184vw;
+    }
+  }
+
+  &__subscribe-watch {
+    padding-left: 25px;
+    font-size: 18px;
+    line-height: 154%;
+    color: $gray;
+    background-image: url(../img/eye.png);
+    background-repeat: no-repeat;
+    background-position: left center;
+
+    @media screen and (max-width: 1400px) {
+      padding-left: 20px;
+      background-size: 15px;
+      font-size: 16px;
+      line-height: 24.64px;
+    }
+
+    @media screen and (max-width: 991px) {
+      font-size: 14px;
+    }
+
+    @media screen and (max-width: 580px) {
+      font-size: 12px;
+      line-height: 18.48px;
+      padding-left: 16px;
+      background-size: 12px;
+    }
+  }
+
+  &__subscribe-wrapper {
+    display: block;
+    @media screen and (max-width: 1400px) {
+      display: none;
+    }
+  }
+}
+
+.video-wrapper {
+  @media screen and (max-width: 991px) {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 3.125vw;
+    padding-left: 3.125vw;
+  }
+
+  @media screen and (max-width: 991px) {
+    padding-top: 48px;
+    padding-bottom: 23px;
+  }
+
+  @media screen and (max-width: 580px) {
+    flex-direction: column;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 38px;
+  }
+}

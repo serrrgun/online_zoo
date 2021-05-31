@@ -1,0 +1,49 @@
+.footer-nav {
+
+  &__title {
+    margin-bottom: 40px;
+    font-size: 22px;
+    line-height: 26px;
+    color: $white;
+    font-weight: 400;
+
+    @media screen and (max-width: 1400px) {
+      letter-spacing: .11em;
+    }
+
+    @media screen and (max-width: 580px) {
+      font-size: 5.625vw;
+      line-height: 6.66vw;
+      margin-bottom: 27px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__item {
+    margin-bottom: 31px;
+
+    @media screen and (max-width: 580px) {
+      margin-bottom: 23px;
+    }
+  }
+
+  &__link {
+    font-size: 18px;
+    line-height: 27.7px;
+    color:  #BCBCBC;
+
+    @media screen and (max-width: 991px) {
+      font-size: 16px;
+      line-height: 24.6px;
+    }
+
+    @media screen and (max-width: 580px) {
+      font-size: 4.375vw;
+      line-height: 6.373vw;
+    }
+  }
+}

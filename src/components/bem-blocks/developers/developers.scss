@@ -1,0 +1,100 @@
+.developers {
+  display: flex;
+  align-items: center;
+
+  @media screen and (max-width: 1400px) {
+    flex-direction: column;
+  }
+
+  @media screen and (max-width: 991px) {
+    padding-top: 20px;
+    flex-direction: row;
+  }
+
+  @media screen and (max-width: 580px) {
+    flex-direction: column-reverse;
+  }
+
+  &__yem {
+    position: relative;
+    width: 118px;
+    height: 62px;
+    cursor: pointer;
+
+    &:hover {
+      .developers__tooltip {
+        opacity: 1;
+        top: -60px;
+      }
+    }
+
+    @media screen and (max-width: 991px) {
+      width: 93px;
+      height: 49px;
+    }
+
+    @media screen and (max-width: 580px) {
+      width: 80px;
+      height: 42px;
+      align-self: flex-start;
+    }
+  }
+
+  &__rss {
+    position: relative;
+    width: 128px;
+    height: 47px;
+    cursor: pointer;
+
+    &:hover {
+      .developers__tooltip {
+        opacity: 1;
+        top: -80px;
+      }
+    }
+
+    @media screen and (max-width: 991px) {
+      width: 102px;
+      height: 38px;
+    }
+
+    @media screen and (max-width: 580px) {
+      width: 84px;
+      height: 31px;
+      align-self: flex-start;
+    }
+  }
+
+  &__plus {
+    margin: 0 24px;
+    font-size: 16px;
+    line-height: 19px;
+    color: $white;
+
+    @media screen and (max-width: 1400px) {
+      margin: 25px 0;
+    }
+
+    @media screen and (max-width: 991px) {
+      margin: 0 30px;
+    }
+
+    @media screen and (max-width: 580px) {
+      margin: 20px 0;
+    }
+  }
+
+  &__tooltip {
+    position: absolute;
+    top: -100px;
+    left: 0;
+    display: inline-block;
+    padding: 10px;
+    border-radius: 10px;
+    color: $black;
+    background-color: $white-blue;
+    white-space: nowrap;
+    opacity: 0;
+    transition: .3s;
+  }
+}

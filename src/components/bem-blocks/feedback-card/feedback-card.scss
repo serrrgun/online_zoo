@@ -1,0 +1,75 @@
+.feedback-card {
+  width: 512px;
+  margin-right: 40px;
+  padding: 40px 40px 77px 40px;
+  border-radius: 10px;
+  background-color: $white;
+
+  @media screen and (max-width: 1400px) {
+    width: 454px;
+    padding: 30px 30px 59px 30px;
+  }
+
+  @media screen and (max-width: 991px) {
+    width: 454px;
+    margin-right: 0;
+  }
+
+  @media screen and (max-width: 580px) {
+    width: 300px;
+    padding-bottom: 36px;
+  }
+
+  &__user {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+
+    @media screen and (max-width: 580px) {
+      margin-bottom: 24px;
+    }
+  }
+
+  &__icon {
+    width: 42px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-right: 21px;
+  }
+
+  &__name {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 135%;
+    color: $black;
+
+    @media screen and (max-width: 1400px) {
+      font-size: 18px;
+    }
+  }
+
+  &__descr {
+    font-size: 18px;
+    line-height: 154%;
+    color: $dark;
+
+    @media screen and (max-width: 1400px) {
+      font-size: 16px;
+      line-height: 24.6px;
+    }
+
+    @media screen and (max-width: 580px) {
+      font-size: 18px;
+      line-height: 28px;
+    }
+  }
+
+  &--none {
+    @media screen and (max-width: 1800px) {
+      display: none;
+    }
+  }
+
+  
+
+}

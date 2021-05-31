@@ -1,0 +1,22 @@
+.user {
+  transition: .3s;
+
+  svg {
+    display: block;
+    width: 52px;
+    height: 52px;
+
+    @media screen and (max-width: 1400px) {
+      width: 42px;
+      height: 42px;
+    }
+  }
+
+  &:hover { 
+    opacity: .7;
+  }
+
+  @media screen and (max-width: 991px) {
+    display: none;
+  }
+}

@@ -1,0 +1,85 @@
+.map {
+  position: relative;
+
+  @media screen and (max-width: 580px) {
+    display: none;
+  }
+
+  &__inner {
+    position: relative;
+  }
+
+  &__pin {
+    cursor: pointer;
+    position: absolute;
+
+    &--gorilla {
+      top: 48%;
+      left: 46.8%;
+    }
+
+    &--alligator {
+      top: 29.7%;
+      left: 20.7%;
+    }
+
+    &--panda {
+      top: 28%;
+      left: 73%;
+    }
+
+    &--eagle {
+      top: 22%;
+      left: 8.7%;
+    }
+
+    &--active {
+      svg {
+        width: 140px !important;
+
+        @media screen and (max-width: 1400px) {
+          width: 80px !important;
+        }
+
+        .inner {
+          stroke: #609FFF !important;
+          stroke-width: 2px !important;
+        }
+      }
+    }
+
+    svg {
+      transition: .4s;
+      width: 113px;
+
+      @media screen and (max-width: 1400px) {
+        width: 65px;
+      }
+
+      .inner {
+        transition: .4s;
+        stroke: transparent;
+        stroke-width: 2px;
+      }
+    }
+
+    &:hover {
+
+      svg {
+        transition: .4s;
+        width: 148px;
+
+        @media screen and (max-width: 1400px) {
+          width: 80px;
+        }
+
+        .inner {
+          transition: .4s;
+          stroke: #609FFF;
+          stroke-width: 2px;
+        }
+      }
+      
+    }
+  }
+}

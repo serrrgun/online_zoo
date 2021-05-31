@@ -1,0 +1,100 @@
+.subtitle {
+  font-family: "Merriweather-Bold";
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 145%;
+  color: $dark-blue;
+
+  @media screen and (max-width: 1800px) {
+    font-size: 1.456vw;
+  }
+
+  @media screen and (max-width: 1400px) {
+    font-size: 2.33vw;
+    line-height: 3.38vw;
+  }
+
+  @media screen and (max-width: 991px) {
+    font-size: 4.06vw;
+    line-height: 5.89vw;
+    text-align: center;
+    letter-spacing: -0.04em;
+  }
+
+  @media screen and (max-width: 991px) {
+    font-size: 6.22vw;
+    line-height: 9.1vw;
+    text-align: center;
+  }
+
+  &--white {
+    color: $white;
+  }
+  
+  &--small {
+    font-size: 26px;
+    line-height: 145%;
+
+    @media screen and (max-width: 1800px) {
+      font-size: 1.35vw;
+    }
+  }
+}
+
+.title {
+  display: inline-block;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 26px;
+  letter-spacing: 0.115em;
+  color: $black;
+
+  &--white {
+    color: $white;
+  }
+
+  &--small {
+    @media screen and (max-width: 1400px) {
+      font-size: 20px;
+    }
+
+    @media screen and (max-width: 580px) {
+      font-size: 16px;
+    }
+  }
+
+  @media screen and (max-width: 991px) {
+    text-align: center;
+  }
+
+  @media screen and (max-width: 580px) {
+    font-size: 16px;
+  }
+}
+
+.paragraph {
+  font-size: 18px;
+  line-height: 154%;
+  color: $gray;
+
+  &--white {
+    color: $white;
+  }
+
+  @media screen and (max-width: 1919px) {
+    font-size: 1.33vw;
+    line-height: 2.05vw;
+  }
+
+  @media screen and (max-width: 991px) {
+    font-size: 2.5vw;
+    line-height: 3.85vw;
+    text-align: center;
+  }
+
+  @media screen and (max-width: 991px) {
+    font-size: 4.375vw;
+    line-height: 6.9vw;
+    text-align: center;
+  }
+}

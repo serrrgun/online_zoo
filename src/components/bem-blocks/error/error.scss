@@ -1,0 +1,138 @@
+.error {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 136px;
+  padding-bottom: 80px;
+  background-image: url(../img/404.png);
+  background-repeat: no-repeat;
+  background-position: center 50px;
+  background-size: 286px 141px;
+
+  @media screen and (max-width: 991px) {
+    padding-right: 3.125vw;
+    padding-left: 3.125vw;
+  }
+
+  @media screen and (max-width: 580px) {
+    padding-top: 100px;
+    padding-bottom: 50px;
+  }
+
+  &__title {
+    margin-bottom: 30px;
+
+    @media screen and (max-width: 991px) {
+      font-size: 26px;
+      line-height: 145%;
+    }
+  }
+
+  &__descr {
+    margin-bottom: 50px;
+    width: 60%;
+    font-size: 24px;
+    line-height: 154%;
+    text-align: center;
+    color: $dark-blue;
+
+    @media screen and (max-width: 1400px) {
+      font-size: 18px;
+      line-height: 154%;
+    }
+
+    @media screen and (max-width: 991px) {
+      width: 100%;
+      font-size: 16px;
+      line-height: 154%;
+    }
+
+    @media screen and (max-width: 580px) {
+      font-size: 14px;
+      line-height: 154%;
+    }
+
+    span {
+      display: block;
+    }
+  }
+
+  &__btn {
+    margin-bottom: 50px;
+  }
+
+  &__video {
+    margin-bottom: 80px;
+    width: 46.9%;
+    position: relative;
+    padding-bottom: 26.421%; /* задаёт высоту контейнера для 16:9 (если 4:3 — поставьте 75%) */
+    height: 0;
+    border-radius: 5px;
+    overflow: hidden;
+
+    @media screen and (max-width: 1400px) {
+      width: 70%;
+      padding-bottom: 56.25%;
+    }
+
+    @media screen and (max-width: 991px) {
+      width: 100%;
+      margin-bottom: 35px;
+    }
+
+    iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 599px;
+      border-width: 0;
+      outline-width: 0;
+
+      @media screen and (max-width: 1400px) {
+        height: 100%;
+      }
+    }
+  }
+
+  &__ph {
+    width: 22%;
+    font-size: 18px;
+    line-height: 154%;
+    text-align: center;
+    color: $gray;
+
+    @media screen and (max-width: 1400px) {
+      width: 40%;
+      font-size: 16px;
+      line-height: 154%;
+    }
+
+    @media screen and (max-width: 991px) {
+      width: 80%;
+      font-size: 14px;
+      line-height: 154%;
+    }
+
+    @media screen and (max-width: 580px) {
+      font-size: 12px;
+      line-height: 154%;
+    }
+  }
+
+  &__link {
+    color: $hard-blue;
+    text-decoration: underline;
+    transition: .3s;
+    line-height: 24px;
+
+    @media screen and (max-width: 1400px) {
+      
+    }
+
+    &:hover {
+      color: $light-blue;
+    }
+  }
+}

@@ -1,0 +1,46 @@
+.footer-logo {
+  margin-bottom: 192px;
+  transition: .3s;
+
+  @media screen and (max-width: 1400px) {
+    margin-bottom: 98px;
+  }
+
+  @media screen and (max-width: 991px) {
+    margin-bottom: 0;
+    margin-right: 19%;
+  }
+
+  @media screen and (max-width: 580px) {
+    margin-bottom: 74px;
+    margin-right: 0;
+  }
+
+  svg {
+    width: 153px;
+    height: 117px;
+    transition: .3s;
+
+    @media screen and (max-width: 1400px) {
+      width: 119px;
+      height: 91px;
+    }
+
+    @media screen and (max-width: 991px) {
+      width: 95px;
+      height: 74px;
+    }
+
+    @media screen and (max-width: 580px) {
+      width: 60px;
+      height: 47px;
+    }
+  }
+
+  &:hover {
+    svg {
+      opacity: .7;
+      fill: $light-blue;
+    }
+  }
+}

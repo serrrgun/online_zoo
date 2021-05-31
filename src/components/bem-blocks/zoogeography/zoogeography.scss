@@ -1,0 +1,86 @@
+.zoogeography {
+  background-color: $white;
+
+  &__container {
+    display: flex;
+    padding-left: 12.7%;
+    padding-top: 50px;
+    padding-bottom: 112px;
+    padding-right: 4.73%;
+
+    @media screen and (max-width: 1400px) {
+      
+      padding-left: 15.5vw;
+      padding-right: 3vw;
+      padding-bottom: 99px;
+    }
+
+    @media screen and (max-width: 991px) {
+      flex-direction: column;
+      align-items: center;
+      padding-top: 31px;
+      padding-left: 3.125vw;
+      padding-right: 3.125vw;
+      padding-bottom: 84px;
+    }
+
+    @media screen and (max-width: 580px) {
+      padding-top: 10px;
+      padding-bottom: 60px;
+    }
+  }
+
+  &__map {
+    
+    @media screen and (max-width: 1400px) {
+      padding-top: 134px;
+    }
+
+    @media screen and (max-width: 991px) {
+      padding-top: 0;
+      margin-top: -72px;
+    }
+
+    @media screen and (max-width: 580px) {
+      display: none;
+    }
+  }
+
+  &__inner {
+    margin-right: 25px;
+    padding-top: 50px;
+
+    @media screen and (max-width: 1400px) {
+      padding-top: 49px;
+      margin-right: 5px;
+    }
+
+    @media screen and (max-width: 991px) {
+      margin-right: 0;
+      z-index: 1;
+    }
+  }
+
+  &__title {
+    margin-bottom: 63px;
+    color: #000000 !important;
+
+    @media screen and (max-width: 1400px) {
+      margin-bottom: 58px;
+      letter-spacing: .04em;
+    }
+
+    @media screen and (max-width: 991px) {
+      display: none;
+    }
+  }
+
+  &__slider {
+    display: none;
+
+    @media screen and (max-width: 580px) {
+      display: block;
+      width: 100%;
+    }
+  }
+}

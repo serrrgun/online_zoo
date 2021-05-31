@@ -1,0 +1,238 @@
+.facts {
+  background-color: $white;
+
+  &__container {
+    padding-left: 12.7%;
+    padding-right: 12.7%;
+    padding-bottom: 84px;
+
+    @media screen and (max-width: 1400px) {
+      padding-top: 12px;
+      padding-right: 3.33vw;
+      padding-left: 15.33vw;
+    }
+
+    @media screen and (max-width: 991px) {
+      padding-right: 3.125vw;
+      padding-left: 3.125vw;
+    }
+
+    @media screen and (max-width: 580px) {
+      padding-top: 14px;
+    }
+  }
+  
+
+  &__title {
+    margin-bottom: 30px;
+
+    @media screen and (max-width: 1400px) {
+      font-size: 3vw;
+      line-height: 5.89vw;
+      margin-bottom: 21px;
+    }
+
+    @media screen and (max-width: 991px) {
+      font-size: 4.06vw;
+      line-height: 5.89vw;
+      margin-top: 40px;
+      text-align: left;
+      letter-spacing: 0em;
+    }
+
+    @media screen and (max-width: 580px) {
+      margin-top: 20px;
+      font-size: 20px;
+      line-height: 145%;
+    }
+  }
+
+  &__descr {
+    width: 512px;
+    margin-bottom: 46px;
+
+    @media screen and (max-width: 991px) {
+      width: 89%;
+      font-size: 2.5vw;
+      line-height: 4vw;
+      margin-top: 22px;
+      margin-bottom: 30px;
+      text-align: left;
+    }
+
+    @media screen and (max-width: 580px) {
+      width: 100%;
+      font-size: 14px;
+      line-height: 158%;
+    }
+  }
+
+  &__item {
+    padding-bottom: 25px;
+    padding-top: 12px;
+    padding-right: 9px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #D3D3D3;
+    transition: .5s;
+
+    @media screen and (max-width: 1400px) {
+      padding-top: 15px;
+      padding-bottom: 25px;
+      padding-right: 0;
+      margin-bottom: 15px;
+    }
+
+    @media screen and (max-width: 991px) {
+      padding-top: 18px;
+      padding-bottom: 27px;
+      margin-bottom: 13px;
+    }
+
+    @media screen and (max-width: 580px) {
+      padding-top: 13px;
+      padding-bottom: 20px;
+      margin-bottom: 12px;
+    }
+  }
+
+  &__item-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__item-title {
+    font-size: 26px;
+    line-height: 145%;
+    font-weight: normal;
+    color: $dark-blue;
+    transition: .5s;
+
+    @media screen and (max-width: 1400px) {
+      font-size: 24px;
+    }
+
+    @media screen and (max-width: 991px) {
+      font-size: 20px;
+      line-height: 145%;
+    }
+
+    @media screen and (max-width: 580px) {
+      font-size: 18px;
+      line-height: 145%;
+    }
+  }
+
+  &__item-btn {
+    position: relative;
+    height: 30px;
+    width: 30px;
+    margin-top: -12px;
+
+    @media screen and (max-width: 1400px) {
+      margin-top: -7px;
+    }
+
+    @media screen and (max-width: 991px) {
+      height: 28px;
+      width: 28px;
+    }
+
+    @media screen and (max-width: 580px) {
+      margin-top: -2px;
+    }
+
+    span {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      display: block;
+      background-color: $blue;
+      width: 22px;
+      height: 2px;
+      transform: translate(-50%);
+      border-radius: 1px;
+
+      @media screen and (max-width: 991px) {
+        width: 20px;
+      }
+    }
+
+    span:nth-child(1) {
+      left: 4px;
+      transform: rotate(90deg);
+      transform-origin: center center;
+    }
+  }
+
+  &__item-content {
+    position: relative;
+    height: 0;
+    overflow: hidden;
+    transition: .5s;
+  }
+
+  &__item-content-ph {
+    margin-bottom: 30px;
+    font-size: 18px;
+    line-height: 154%;
+    color: $gray;
+    transition: .5s;
+    opacity: 0;
+
+    @media screen and (max-width: 1400px) {
+      font-size: 16px;
+      line-height: 158%;
+    }
+
+    span {
+      display: block;
+    }
+
+    &:nth-last-child(1) {
+      margin-bottom: 0;
+    }
+  }
+
+  &__item-content-link {
+    color: $hard-blue;
+    transition: .3s;
+
+    &:hover {
+      color: $dark-blue;
+    }
+
+    &:active {
+      color: $gray;
+    }
+  }
+
+  &__item--open {
+
+    border-bottom: 1px solid $light-blue;
+
+    .facts__item-content {
+      padding-top: 30px;
+      height: auto;
+    }
+
+    .facts__item-title {
+      color: $light-blue;
+    }
+
+    .facts__item-content-ph {
+      transition: .5s;
+      opacity: 1;
+    }
+
+    .facts__item-btn {
+      span {
+        background-color: $light-blue;
+
+        &:nth-of-type(1) {
+          background-color: transparent;
+        }
+      }
+    }
+  }
+}
